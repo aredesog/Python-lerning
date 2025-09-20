@@ -1,7 +1,7 @@
 📚 Repositório de Estudos – Backend com Python (ALURA)
 
-Este repositório reúne meus estudos e projetos desenvolvidos durante minha jornada de aprendizado em Backend com Python pela plataforma Alura
-.
+Este repositório reúne meus estudos e projetos desenvolvidos durante minha jornada de aprendizado em Backend com Python.
+
 
 A proposta é manter um espaço organizado, onde cada pasta/projeto contém práticas e exercícios aplicados, com explicações detalhadas, de modo que o material também possa servir como referência futura ou até mesmo ajudar outras pessoas que estejam estudando a mesma área.
 
