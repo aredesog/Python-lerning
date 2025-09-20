@@ -1,0 +1,14 @@
+    ##LOGICA
+    
+    -> Construir um software serve para guia o computador, e é desenvolvido a partir do pensamento computacional
+no qual a lógica trabalhe com um passo a passo como se estivessemos explicando para um computador.
+    -> Os softwares são sequências de pensamentos desenvolvidos por pessoas para se organizar na tradução do pensamento
+computacional.
+    -> Pensar computacionalmente é o primeiro passo para desenvolver uma aplicação, antes mesmo de qualquer linha de código
+assim, transformando ideias em solução. 
+    -> Dividir um problema maior em etapas, é o principal caminho para solucionar com tranquilidade, em resumo, decompor em 
+etapas menores.
+    -> Indentificação de situações semelhantes, facilitam e otimizam o tempo de trabalho entre operações, reutilizando operações
+que são mais comuns em diversas situações.
+    -> Algoritimo nada mais é que uma receita que oferece instruções finitas com pensamentos lógicos para a sua execução.
+tem de ser CLARO, EXECUTÁVEL e ORDENADO.
