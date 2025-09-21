@@ -18,6 +18,12 @@ tem de ser CLARO, EXECUTÁVEL e ORDENADO.
     -> No python não se tem necessidade de ultilizar o ponto e virgula no fim de cada situação.
     -> Nele pode se ultilizar tanto as aspas simplest('), ou duplas (").
     -> O uso de ''', funciona como um \n na hora da formatação, bem útil para designs. 
+    -> As funções em python podem ser bem confusas pela falta de chaves, portanto ficar bem atento aos detalhes de formatação
+do código.
 
     -> print('x') //exibe uma mensagem
     -> opcao_escolhida = input('x') // é a ferramenta para obter ou capturar um valor do usuário
+    -> O uso do if else nao exige chaves nem parenteses, apenas dois pontos(:) após o if e o else, também nele existe o elif
+    -> print(type(X)) -> Lista o tipo da variavel X na hora da execução do programa
+    -> o switch case do Python é o match opcao_escolhida: ele da outra formatação ao código, funciona na mesma forma do switch case
+    -> if __name__ =='__main__' -> garante que esse arquivo sera o principal
