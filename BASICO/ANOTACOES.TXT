@@ -12,3 +12,12 @@ etapas menores.
 que são mais comuns em diversas situações.
     -> Algoritimo nada mais é que uma receita que oferece instruções finitas com pensamentos lógicos para a sua execução.
 tem de ser CLARO, EXECUTÁVEL e ORDENADO.
+
+##LINGUAGUEM PYTHON
+
+    -> No python não se tem necessidade de ultilizar o ponto e virgula no fim de cada situação.
+    -> Nele pode se ultilizar tanto as aspas simplest('), ou duplas (").
+    -> O uso de ''', funciona como um \n na hora da formatação, bem útil para designs. 
+
+    -> print('x') //exibe uma mensagem
+    -> opcao_escolhida = input('x') // é a ferramenta para obter ou capturar um valor do usuário
