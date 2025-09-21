@@ -27,3 +27,9 @@ do código.
     -> print(type(X)) -> Lista o tipo da variavel X na hora da execução do programa
     -> o switch case do Python é o match opcao_escolhida: ele da outra formatação ao código, funciona na mesma forma do switch case
     -> if __name__ =='__main__' -> garante que esse arquivo sera o principal
+    -> try (reliza uma tenativa de acesso, caso ela nao ocorra, ele nao retorna uma mensagem de erro e sim nos permite com
+    o except retornar uma outra condição, no caso de digitar um int esperando uma string por exemplo)
+    -> se foi criada uma lista, para colocar valores desntro dela se usa o nome.append(X), e assim se selva um valor nela
+    -> tupla != lista, tupla = () e lista = [], tupla serve para garantir que os elementos não sejam alterados após a criação
+    -> o for no python é usado da mesma maneira só que com gramática diferente, ja que se usa for _ in range(vezes de repetição)
+equanto o while funciona para condiçoes, while condição: assim funciona os loopings

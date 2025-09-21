@@ -2,6 +2,11 @@
 
 import os
 
+# Uma lista de restaurantes, como se fosse um array em C
+restaurantes = ['Pizza','Sushi']
+
+#Exemplos de funções em Python
+
 def exibir_nome():
     print('''
     ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
@@ -18,32 +23,57 @@ def exibir_opcoes():
     print('3. Ativar Restaurante')
     print('4. Sair')
 
-
-
-#Exemplo de função em Python
-
 def finalizar_app():
     os.system('cls') #Limpa o terminal e exibe apenas o conteudo da função
     print('Encerrando o App')
+
+def opcao_invalida():
+    print('Opção Inválida!\n')
+    input('\nDigite uma tecla para voltar ao menu principal')
+
+def cadastrar_restaurante():
+    os.system('cls')
+    print('Cadastro de novos restaurantes')
+    nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
+    restaurantes.append(nome_do_restaurante)
+    print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso!')
+    input('\nDigite uma tecla para voltar ao menu principal')
+    main()
+
+def listar_restaurantes():
+    os.system('cls')
+    print('Listando os restaurantes:\n ')
+    
+    for restaurante in restaurantes:
+        print(f'.{restaurante}')
+    
+    input('\nDigite uam tecla para retornar ao menu principal')
+    main()
 
 #Apendendo if, else e elif no python (CONDICIONAIS)
 
 def escolher_opcao():
 
-    opcao_escolhida = int(input('\nEscolha sua opção: ')) 
-    #opcao_escolhida = int (opcao_escolhida) -> Transforma a opcao_escolhida em uma variavel do tipo int
-    #print(f'A opção escolhida foi: {opcao_escolhida}')  O uso do (f'x {y}?'), é outro metodo para a vizualização da variavel
-    
-    if opcao_escolhida == 1:
-        print('Cadastrar Restaurante')
-    elif opcao_escolhida == 2:
-        print('Listar Restaurante')
-    elif opcao_escolhida == 3:
-        print('Ativar Restaurante')
-    else:
-        finalizar_app()
+    try:
+        opcao_escolhida = int(input('\nEscolha sua opção: ')) 
+        #opcao_escolhida = int (opcao_escolhida) -> Transforma a opcao_escolhida em uma variavel do tipo int
+        #print(f'A opção escolhida foi: {opcao_escolhida}')  O uso do (f'x {y}?'), é outro metodo para a vizualização da variavel
+        
+        if opcao_escolhida == 1:
+            cadastrar_restaurante()
+        elif opcao_escolhida == 2:
+            listar_restaurantes()
+        elif opcao_escolhida == 3:
+            print('Ativar Restaurante')
+        elif opcao_escolhida == 3:
+            finalizar_app()
+        else:
+            opcao_invalida()
+    except:
+        opcao_invalida()
 
 def main():
+    os.system('cls')
     exibir_nome()
     exibir_opcoes()
     escolher_opcao()

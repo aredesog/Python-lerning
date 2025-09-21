@@ -25,7 +25,6 @@ print(
 pi = 3.14159 
 print(f'O valor arredondado de pi é: {pi:.2f}')
 
-'''
 
 #Solicite ao usuário que insira um número, par ou impara?
 
@@ -83,3 +82,6 @@ elif x < 0 and y < 0:
     print('Coordenada localizada no 4° Quadrante')
 else:
     print('Ponto localizado na origem!')
+
+'''
+
