@@ -7,6 +7,8 @@ restaurantes = ['Pizza','Sushi']
 
 #Exemplos de funções em Python
 
+
+
 def exibir_nome():
     print('''
     ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
@@ -17,6 +19,15 @@ def exibir_nome():
     ╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝  ╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░
     ''')
 
+def voltar_ao_menu():
+    input('\nDigite uma tecla para voltar ao menu principal ')
+    main()
+
+def exibir_subtitulo(texto):
+    os.system("cls")  #Limpa o terminal e exibe apenas o conteudo da função
+    print(texto)
+    print()
+
 def exibir_opcoes():
     print('1. Cadastrar Restaurante')
     print('2. Listar Restaurante')
@@ -24,31 +35,28 @@ def exibir_opcoes():
     print('4. Sair')
 
 def finalizar_app():
-    os.system('cls') #Limpa o terminal e exibe apenas o conteudo da função
-    print('Encerrando o App')
+    exibir_subtitulo('Encerrando o App')
 
 def opcao_invalida():
     print('Opção Inválida!\n')
-    input('\nDigite uma tecla para voltar ao menu principal')
+    
+    voltar_ao_menu()
 
 def cadastrar_restaurante():
-    os.system('cls')
-    print('Cadastro de novos restaurantes')
+    exibir_subtitulo('Cadastro de novos restaurantes')
     nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
     restaurantes.append(nome_do_restaurante)
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso!')
-    input('\nDigite uma tecla para voltar ao menu principal')
-    main()
+    
+    voltar_ao_menu()
 
 def listar_restaurantes():
-    os.system('cls')
-    print('Listando os restaurantes:\n ')
+    exibir_subtitulo('Listando os restaurantes:\n ')
     
     for restaurante in restaurantes:
         print(f'.{restaurante}')
     
-    input('\nDigite uam tecla para retornar ao menu principal')
-    main()
+    voltar_ao_menu()
 
 #Apendendo if, else e elif no python (CONDICIONAIS)
 
