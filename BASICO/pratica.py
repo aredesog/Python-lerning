@@ -85,3 +85,40 @@ else:
 
 '''
 
+#Listando coisas
+
+numeros =[1,2,3,4,5,6,7,8,9,10]
+nomes = ['angela','aredes','paola','mendes']
+anos = [2006, 2025]
+
+for numero in numeros:
+    print(f"O numero e: {numero}\n")
+
+for nome in nomes:
+    print(f"O nome é: {nome}")
+
+for ano in anos:
+    if ano == 2006:
+        print(f"O ano que eu nasci é: {ano}")
+    else:
+        print(f"O ano atual é: {ano}")
+
+
+#Cauculando numeros impares da lista numeros
+
+soma = 0
+
+for numero in numeros:
+    if (numero % 2) == 1:
+        soma = soma + numero
+    else:
+        print("\nEsse numero é par!")
+
+
+#Imprimindo em ordem crescente
+
+
+
+
+
+
