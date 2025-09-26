@@ -3,7 +3,11 @@
 import os
 
 # Uma lista de restaurantes, como se fosse um array em C
-restaurantes = ['Pizza','Sushi']
+restaurantes = [{'nome':'Pizza','categoria':'Sushi', 'ativo': False},
+                {'nome':'Sushi', 'categoria': 'italiana', 'ativo': True},
+                {'nome': 'Goias', 'categoria':'Sorvete', 'ativo':False},
+                ]
+                
 
 #Exemplos de funções em Python
 
@@ -44,8 +48,12 @@ def opcao_invalida():
 
 def cadastrar_restaurante():
     exibir_subtitulo('Cadastro de novos restaurantes')
+    
     nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
-    restaurantes.append(nome_do_restaurante)
+    categoria = input(f"Dgite o nome da categoria do resturante {nome_do_restaurante}")
+    dados_restaurante = {'nome': nome_do_restaurante, 'categoria': categoria, 'ativo': False}
+    
+    restaurantes.append(dados_restaurante)
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso!')
     
     voltar_ao_menu()
@@ -54,7 +62,10 @@ def listar_restaurantes():
     exibir_subtitulo('Listando os restaurantes:\n ')
     
     for restaurante in restaurantes:
-        print(f'.{restaurante}')
+        nome_restaurante = restaurante['nome']
+        categoria = restaurante['categoria']
+        ativo = restaurante['ativo']
+        print(f' - {nome_restaurante} | {categoria} | {ativo}' )
     
     voltar_ao_menu()
 
