@@ -83,7 +83,7 @@ elif x < 0 and y < 0:
 else:
     print('Ponto localizado na origem!')
 
-'''
+
 
 #Listando coisas
 
@@ -95,11 +95,11 @@ for numero in numeros:
     print(f"O numero e: {numero}\n")
 
 for nome in nomes:
-    print(f"O nome é: {nome}")
+    print(f"O nome é: {nome}\n")
 
 for ano in anos:
     if ano == 2006:
-        print(f"O ano que eu nasci é: {ano}")
+        print(f"O ano que eu nasci é: {ano}\n")
     else:
         print(f"O ano atual é: {ano}")
 
@@ -107,18 +107,70 @@ for ano in anos:
 #Cauculando numeros impares da lista numeros
 
 soma = 0
+numeros =[1,2,3,4,5,6,7,8,9,10]
 
 for numero in numeros:
     if (numero % 2) == 1:
         soma = soma + numero
+        print(f"A soma esta em: {soma}")
     else:
         print("\nEsse numero é par!")
 
-
-#Imprimindo em ordem crescente
-
+print(f"\nA soma dos numeros impares é: {soma}\n")
 
 
 
+#Imprimindo em ordem decrescente
+
+i = 0
+
+for i in range(10, 0, -1):
+    print(i)
+
+
+#Impressão da tabuada de um numero solicitado
+
+i = 0
+Z = 0
+
+valor = int(input("Digite um numero que deseja saber a tabuda de 0 a 10: "))
+
+for i in  range(11):
+    print(f"{Z} x {valor} = {Z*valor} \n")
+    Z = Z + 1
+
+
+#Soma de todos os elementos da lista com o try
+
+numeros =[1,2,3,4,5,6,7,8,9,10]
+soma = 0
+i = 0
+
+try:
+    for numero in numeros:
+        soma = soma + numero[i] 
+        i = i + 1
+        print(f"A soma dos elementos foi: {soma}")
+except Exception as e:
+    print(f"Ocorreu um erro {e}")
+
+'''
+
+#Media de todos os elementos de uma lista
+
+soma = 0
+numeros =[1,2,3,4,5,6,7,8,9,10]
+
+try:
+    for numero in numeros:
+        soma = soma + numero 
+        print(f"A soma dos elementos foi: {soma}")
+    media = soma/ len(numeros)
+    print(f"A media cauculada foi {media}")
+except ZeroDivisionError:
+    print("Lista vazia")
+except Exception as e:
+    print(f"Ocorreu um erro {e}")
+    
 
 
