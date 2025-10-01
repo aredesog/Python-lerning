@@ -12,7 +12,6 @@ restaurantes = [{'nome':'Pizza','categoria':'Sushi', 'ativo': False},
 #Exemplos de funções em Python
 
 
-
 def exibir_nome():
     print('''
     ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗

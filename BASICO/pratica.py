@@ -154,7 +154,7 @@ try:
 except Exception as e:
     print(f"Ocorreu um erro {e}")
 
-'''
+
 
 #Media de todos os elementos de uma lista
 
@@ -172,5 +172,6 @@ except ZeroDivisionError:
 except Exception as e:
     print(f"Ocorreu um erro {e}")
     
+    '''
 
 
